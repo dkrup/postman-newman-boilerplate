@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "newman": "^5.0.0",
+    "newman-reporter-htmlextra": "^1.22.11",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "test": "newman run postmanCollections/myCollection.json -r htmlextra",
+    "pretest": "rimraf newman"
+  }
+}
